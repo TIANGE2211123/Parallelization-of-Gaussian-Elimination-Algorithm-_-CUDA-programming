@@ -57,7 +57,7 @@ Stable Performance at Larger Data Sizes: When the data size reaches 1000, the sp
 
 Results of Algorithm Optimization: Through parallel acceleration efforts, the execution time of the Gaussian elimination algorithm has been reduced from thousands or tens of thousands of milliseconds to just a few hundred milliseconds, a significant improvement. This not only enhances the efficiency of the algorithm but also enables the possibility of handling larger-scale problems.
 
-![jieguo](pthread_openmp/2.png)
+![jieguo](pthread-openmp/1.png)
 
 #### Summary
 This semester’s work has not only explored various acceleration methods theoretically but has also achieved remarkable results in practice. By combining SIMD acceleration, multithreading with OpenMP, and non-blocking communication with MPI, an efficient parallelization of the Gaussian elimination algorithm has been realized.
@@ -88,7 +88,7 @@ Optimization Strategy for Small Datasets: For smaller datasets, the overhead ass
 
 Optimal Configuration for Large Datasets: When processing extremely large datasets (as shown in Example 10), the combination of 8 processes, 8 threads, and AVX instruction set optimizations yielded the best performance, achieving nearly a 10x speedup. This is the highest speedup achieved this semester with the special Gaussian elimination algorithm.
 
-![输入图片说明](pthread_openmp/1.png)
+![输入图片说明](pthread-openmp/2.png)
 
 #### Conclusion
 In conclusion, the parallelization of the special Gaussian elimination algorithm requires selecting appropriate parallel strategies based on the dataset size. The combination of MPI multi-process optimization, OpenMP multi-threading, and AVX (SIMD) instruction sets can result in significant speedup for large-scale data processing.
